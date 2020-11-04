@@ -2,4 +2,10 @@ from flask import Flask
 
 
 def create_app():
-    return Flask(__name__)
+    app = Flask(__name__)
+
+    @app.route('/login')
+    def login():
+        return ''
+
+    return app
