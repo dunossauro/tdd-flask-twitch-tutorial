@@ -10,6 +10,7 @@ flask = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
+blinker = "^1.4"
 
 [build-system]
 requires = ["poetry>=0.12"]

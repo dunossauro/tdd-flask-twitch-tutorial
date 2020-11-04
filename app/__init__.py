@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app():
@@ -6,6 +6,6 @@ def create_app():
 
     @app.route('/login')
     def login():
-        return ''
+        return render_template('login.html')
 
     return app
